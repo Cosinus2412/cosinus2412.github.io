@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pascal | Personal Site</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Spline+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <span class="brand-mark">PC</span>
+      <span class="brand-text">Pascal Cosinus</span>
+    </div>
+    <nav class="nav" id="nav">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">Hi, I'm Pascal</p>
+        <h1>A calm personal site for sharing who I am.</h1>
+        <p class="lede">Swap in your story, your photo, and your links. Keep it simple and focus on what you want people to know about you.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#contact">Contact</a>
+          <a class="btn ghost" href="#about">More about me</a>
+        </div>
+        <div class="quick-facts">
+          <div>
+            <p class="fact-label">Based in</p>
+            <p class="fact-value">Your city, country</p>
+          </div>
+          <div>
+            <p class="fact-label">Role</p>
+            <p class="fact-value">What you do</p>
+          </div>
+          <div>
+            <p class="fact-label">Email</p>
+            <p class="fact-value">you@example.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="profile-card">
+        <div class="avatar" aria-hidden="true">PC</div>
+        <h3>Snapshot</h3>
+        <ul class="profile-list">
+          <li>
+            <span class="profile-label">Currently</span>
+            <span class="profile-value">What you're working on</span>
+          </li>
+          <li>
+            <span class="profile-label">Interested in</span>
+            <span class="profile-value">What you want next</span>
+          </li>
+          <li>
+            <span class="profile-label">Strengths</span>
+            <span class="profile-value">Top skills or traits</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-head">
+        <p class="eyebrow">About</p>
+        <h2>A short intro.</h2>
+        <p class="section-lede">Write a few lines about yourself—what drives you, what you enjoy building, and how you like to work.</p>
+      </div>
+      <div class="about-columns">
+        <div class="card soft-card">
+          <p class="card-label">Story</p>
+          <p class="card-text">
+            I'm <strong>Pascal</strong>. Add your background here: where you learned to code, what industries you've touched, or the kind of projects that make you light up.
+          </p>
+        </div>
+        <div class="card soft-card">
+          <p class="card-label">How I work</p>
+          <ul class="bullet-list">
+            <li>What you care about (clarity, accessibility, shipping on time).</li>
+            <li>How you collaborate (async, pairing, writing docs).</li>
+            <li>What you value (user trust, thoughtful details, fast pages).</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="section-head">
+        <p class="eyebrow">Skills</p>
+        <h2>Things I'm comfortable with.</h2>
+      </div>
+      <div class="skills">
+        <div class="skill-group">
+          <p class="card-label">Frontend</p>
+          <div class="tag-row">
+            <span class="pill soft">HTML/CSS</span>
+            <span class="pill soft">JavaScript</span>
+            <span class="pill soft">React</span>
+            <span class="pill soft">TypeScript</span>
+            <span class="pill soft">Next.js</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <p class="card-label">Tooling & Practices</p>
+          <div class="tag-row">
+            <span class="pill soft">Git</span>
+            <span class="pill soft">Testing</span>
+            <span class="pill soft">Design systems</span>
+            <span class="pill soft">Accessibility</span>
+            <span class="pill soft">Docs</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <p class="card-label">Working style</p>
+          <div class="tag-row">
+            <span class="pill soft">Collaborative</span>
+            <span class="pill soft">Async friendly</span>
+            <span class="pill soft">Prototyping</span>
+            <span class="pill soft">User-focused</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="section-head">
+        <p class="eyebrow">Experience</p>
+        <h2>Where I've been.</h2>
+        <p class="section-lede">List a few roles with dates and highlights. Keep it short and focused on impact.</p>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="time">2023 — Present</div>
+          <div class="timeline-card">
+            <h3>Role @ Company</h3>
+            <p>One or two lines about what you shipped, improved, or led.</p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <div class="time">2021 — 2023</div>
+          <div class="timeline-card">
+            <h3>Previous role</h3>
+            <p>Mention key projects, tech stack, or outcomes (performance wins, conversions, reliability).</p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <div class="time">Before</div>
+          <div class="timeline-card">
+            <h3>Earlier experience</h3>
+            <p>Education, freelance, internships, or anything that shows your path.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="contact-card">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Let's talk.</h2>
+          <p class="section-lede">
+            Want to collaborate or just say hi? Send me a note and I'll reply soon.
+          </p>
+        </div>
+        <div class="contact-actions">
+          <a class="btn primary" href="mailto:you@example.com">Email me</a>
+          <a class="btn ghost" href="https://github.com/cosinus2412" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Simple personal page • Update the text to make it yours</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
