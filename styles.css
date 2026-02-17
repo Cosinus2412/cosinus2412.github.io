@@ -200,8 +200,12 @@ main {
   padding: 20px 20px 22px;
   box-shadow: 0 10px 24px rgba(12, 26, 43, 0.08);
   display: grid;
-  gap: 12px;
-  justify-items: start;
+  grid-template-columns: auto 1fr;
+  grid-template-areas:
+    "avatar heading"
+    "avatar list";
+  gap: 12px 16px;
+  align-items: start;
 }
 
 .avatar {
@@ -216,6 +220,7 @@ main {
   font-size: 20px;
   margin-bottom: 8px;
   overflow: hidden;
+  grid-area: avatar;
 }
 
 .avatar.photo {
@@ -225,6 +230,7 @@ main {
   border: 1px solid var(--stroke);
   background: #fff;
   overflow: hidden;
+  grid-area: avatar;
 }
 
 .avatar.photo img {
@@ -236,8 +242,9 @@ main {
 }
 
 .profile-card h3 {
-  margin: 0 0 10px;
+  margin: 0;
   font-size: 20px;
+  grid-area: heading;
 }
 
 .profile-list {
@@ -246,7 +253,8 @@ main {
   margin: 0;
   display: grid;
   gap: 10px;
-  }
+  grid-area: list;
+}
 
 .profile-list li {
   display: grid;
